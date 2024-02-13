@@ -7,16 +7,22 @@ import { useNavigate } from "react-router-dom";
 const Slider = () => {
   const [currentSlide, setcurrentSlide] = useState(0);
   const navigate = useNavigate();
+  const sliderData = []; // Assuming you have some data here
   const slideLength = sliderData.length;
   const autoScroll = true;
   let slideInterval;
   const intervalTime = 5000;
 
   const nextSlide = () => {
-    setcurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+    setcurrentSlide((prevSlide) =>
+      prevSlide === slideLength - 1 ? 0 : prevSlide + 1
+    );
   };
+
   const prevSlide = () => {
-    setcurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
+    setcurrentSlide((prevSlide) =>
+      prevSlide === 0 ? slideLength - 1 : prevSlide - 1
+    );
   };
 
   useEffect(() => {

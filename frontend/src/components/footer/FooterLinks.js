@@ -81,16 +81,16 @@ const FooterLinks = () => {
             <p className="link-heading">Partners</p>
             <ul className="nav-ul footer-links">
               <li>
-                <a href="#home">Link Shortening</a>
+                <a href="/">Link Shortening</a>
               </li>
               <li>
-                <a href="#home">Branded Link</a>
+                <a href="/">Branded Link</a>
               </li>
               <li>
-                <a href="#home">Analytics</a>
+                <a href="/">Analytics</a>
               </li>
               <li>
-                <a href="#home">Blog</a>
+                <a href="/">Blog</a>
               </li>
             </ul>
           </div>
