@@ -1,0 +1,4 @@
+[build]
+  command = "CI=false npm run build"  # Add CI=false before your build command
+  publish = "/opt/build/repo/frontend"
+  base = "/opt/build/repo/frontend"
